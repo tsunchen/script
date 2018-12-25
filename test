@@ -1,2 +1,2 @@
-git checkout master
+git checkout hadoop
 test
