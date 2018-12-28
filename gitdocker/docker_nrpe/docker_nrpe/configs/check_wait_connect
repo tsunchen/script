@@ -1,0 +1,14 @@
+#!/bin/bash
+
+STATE_OK=0
+STATE_CRITICAL=2
+
+WAITCONN=`netstat -an | grep -i wait | wc -l`
+
+if [ $WAITCONN -le 1000 ];then
+  echo "OK, waiting_connection < 1000 low"
+  exit $STATE_OK
+else
+  echo "WARNING, waiting_connection > 1000 high"
+  exit $STATE_CRITICAL
+fi

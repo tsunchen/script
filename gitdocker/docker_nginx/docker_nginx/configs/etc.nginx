@@ -1,0 +1,1 @@
+htpasswd -cm /usr/local/nginx/conf/.passwd.db pycacti
