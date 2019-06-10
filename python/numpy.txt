@@ -1,0 +1,39 @@
+
+# mask
+>>> my_array = np.arange(-4, 8)
+>>> my_array.size
+12
+>>> my_array
+array([-4, -3, -2, -1,  0,  1,  2,  3,  4,  5,  6,  7])
+>>> my_array.shape = (4,3)
+>>> my_array
+array([[-4, -3, -2],
+       [-1,  0,  1],
+       [ 2,  3,  4],
+       [ 5,  6,  7]])
+>>> positive = my_array > 0
+>>> zero_mod_2_mask = 0 == my_array % 2
+>>> combined_mask = np.logical_and(zero_mod_2_mask, positive)
+>>> my_array [combined_mask]
+array([2, 4, 6])
+
+>>> positive = vector > 0
+>>> positive
+array([ True,  True,  True,  True])
+>>> zero_mod_3_mask = 0==(vector%3)
+>>> zero_mod_3_mask
+array([False, False,  True, False])
+>>> combined_mask = np.logical_and(zero_mod_3_mask, positive)
+>>> vector[combined_mask]
+array([3])
+
+#linspace
+>>> my_lin = np.linspace(5,15,8,retstep=True)
+>>> type(my_lin)
+<class 'tuple'>
+>>> my_lin[0]
+array([ 5.        ,  6.42857143,  7.85714286,  9.28571429, 10.71428571,
+       12.14285714, 13.57142857, 15.        ])
+>>> my_lin[1]
+1.4285714285714286
+
