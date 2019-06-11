@@ -1,0 +1,6 @@
+from socket import *
+
+tcp_client = socket(AF_INET, SOCK_STREAM)
+tcp_client.connect(('localhost', 5001))
+tcp_client.send("p y t h o n ask chaosworld")
+tcp_client.close()
