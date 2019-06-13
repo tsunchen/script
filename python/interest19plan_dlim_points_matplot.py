@@ -48,7 +48,7 @@ BoC_day_001 = [6,13,20,30,60,90,120,180,9999]
 #sum = a1 + a2 + a3 + a4
 
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 a0 = 10000
 
@@ -100,6 +100,8 @@ def calc_interval_array(interval_sum, interval_day, intflow_day, intflow_int, dl
 
 
 if __name__ == '__main__':
+    first_figure = plt.figure("First Figure")
+    
     array_list = [
      [CMBChina_int_001, CMBChina_day_001, "CMBChina_001"],
      [BComm_int_002, BComm_day_002, "BComm_002"],
@@ -109,6 +111,7 @@ if __name__ == '__main__':
      [BoC_int_001, BoC_day_001, "BoC_001"]
     ]
 
+    n = 1
     for i in array_list:
         #print([i][0][0])
         #print([i][0][1])
@@ -122,12 +125,16 @@ if __name__ == '__main__':
         interval_rate = []
         interval_sum = 0
         interval_day = 0
-        dlim = 32
+        dlim = 1000
         points_dlim = []
         points_dlim = calc_interval_array(interval_sum, interval_day, intflow_day, intflow_int, dlim)
+        subplot1 = first_figure.add_subplot(2,3,n)
+        plt.title([i][0][2])
+        plt.plot(intflow_day[:len(points_dlim):], points_dlim, 'k--')
         print(points_dlim)
         print("")
-
+        n += 1
+    plt.show()
     
 
 
