@@ -109,16 +109,18 @@ if __name__ == '__main__':
     
     array_list = [
      [CMBChina_int_6902, CMBChina_day_6902, "CMBChina_6902"],
-     [BComm_int_002, BComm_day_002, "BComm_002"],
+     #[BComm_int_002, BComm_day_002, "BComm_002"],
      [BComm_int_001, BComm_day_001, "BComm_001"],
      [CMBC_int_FSA016001A, CMBC_day_FSA016001A, "CMBC_FSA016001A"],
-     [BoC_int_002, BoC_day_002, "BoC_002"],
-     [BoC_int_001, BoC_day_001, "BoC_001"],
-     [ICBC_int_BBSXE01, ICBC_day_BBSXE01, "ICBC_BBSXE01"],
-     [ICBC_int_BBSXE02, ICBC_day_BBSXE02, "ICBC_BBSXE02"]
+     #[BoC_int_002, BoC_day_002, "BoC_002"],
+     #[BoC_int_001, BoC_day_001, "BoC_001"],
+     #[ICBC_int_BBSXE01, ICBC_day_BBSXE01, "ICBC_BBSXE01"],
+     #[ICBC_int_BBSXE02, ICBC_day_BBSXE02, "ICBC_BBSXE02"]
     ]
 
     n = 1
+    sub_plt = []
+    sub_plt_name = []
     for i in array_list:
         #print([i][0][0])
         #print([i][0][1])
@@ -132,16 +134,23 @@ if __name__ == '__main__':
         interval_rate = []
         interval_sum = 0
         interval_day = 0
-        dlim = 1000
+        dlim = 210
         points_dlim = []
         points_dlim = calc_interval_array(interval_sum, interval_day, intflow_day, intflow_int, dlim)
-        subplot1 = first_figure.add_subplot(2,4,n)
-        plt.title([i][0][2])
-        plt.plot(intflow_day[:len(points_dlim):], points_dlim, 'k--')
+        #
+        #subplot1 = first_figure.add_subplot(2,4,n)
+        #plt.title([i][0][2])
+        #
+        l, = plt.plot(intflow_day[:len(points_dlim):], points_dlim, 's-.')
+        sub_plt.append(l)
+        sub_plt_name.append([i][0][2])
+        plt.legend(tuple(sub_plt), tuple(sub_plt_name), loc='upper left', shadow=True)
         print(points_dlim)
         print("")
         n += 1
     plt.show()
+    print(sub_plt)
+    print(sub_plt_name)
     
 
 

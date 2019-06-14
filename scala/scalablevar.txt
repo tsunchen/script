@@ -1,0 +1,62 @@
+
+// 变长参数
+def add (args: Int *) = {
+
+    var r = 0 ;
+    for (i <- args) r += i ;
+    r
+
+}
+
+// add (1,2,3,4)
+// add (1 to 10: _*)
+
+// 过程
+// 是特殊的函数， 没有 = ， 没有返回值
+def sayHello(s: String) { println("chaos ask world" + s) }
+
+// sayHello("kit")
+
+
+
+// 数组
+val nums = new Array[Int](10)
+
+for (i <- arr) println(i)
+
+var arr = Array("chaosk", "world")
+var arr = new Array[String](2)
+arr(0) = "chaosk"
+arr(1) = "world"
+
+import scala.collection.mutable.ArrayBuffer
+
+//val buf = ArrayBuffer[Int].apply _
+val buf = ArrayBuffer[Int]()
+
+buf.append(1)
+buf += 2
+//buf ++= 3
+buf.+=(4)
+buf++=Array(5,6,7,8)
+
+buf.toArray
+for (i <- 0 until buf.length) print(buf(i))
+for (i <- 0 to (buf.length , 2)) println(i)
+
+(1 to 10).reverse
+for (i <- (1 to 10).reverse) print(i)
+//scala> :load E:\pyvenv\Envs\github\script\script\scala\scalablevar.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
