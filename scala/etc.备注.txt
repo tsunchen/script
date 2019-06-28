@@ -1,0 +1,14 @@
+E:\spark\spark-2.2.0-bin-hadoop2.6\
+
+G:\scalastore\
+
+E:\pyvenv\Envs\github\script\script\scala\test>cd E:\spark\spark-2.2.0-bin-hadoo
+p2.6\
+
+E:\spark\spark-2.2.0-bin-hadoop2.6>cd bin
+
+E:\spark\spark-2.2.0-bin-hadoop2.6\bin>spark-submit --master local[4] G:\scalast
+ore\tsPy\test\SimpleApp_hbq.py > G:\scalastore\tsPy\test\hbq.txt
+
+E:\spark\spark-2.2.0-bin-hadoop2.6\bin>
+

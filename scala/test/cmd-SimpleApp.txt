@@ -1,0 +1,5 @@
+D:\spark-1.0.2-bin-hadoop2\spark-1.0.2-bin-hadoop2\bin>
+spark-submit --master local[4] D:\spark-1.5.2-bin-hadoop2\spark-1.5.2-bin-hadoop2\tsPy\SimpleApp-TICYCLE.py > D:\spark-1.5.2-bin-hadoop2\spark-1.5.2-bin-hadoop2\tsPy\simpleapp-ticycle.txt
+
+D:\spark-1.5.2-bin-hadoop2.4\bin\spark-submit --master local[4] D:\spark-1.5.2-bin-hadoop2.4\tsPy\SimpleApp-TICYCLE.py > D:\spark-1.5.2-bin-hadoop2.4\tsPy\sa-ticycle.txt
+

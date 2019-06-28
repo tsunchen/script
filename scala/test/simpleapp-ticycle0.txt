@@ -1,0 +1,6 @@
+ D:/TSun's Folder/dataanalyse/sparkanalyze/20151201102626MBPlog.txt 
+ 	 Lines with DEV_TDL: 1, lines with FSM_FIN: 1, lines with MBP_SYS: 1 
+
+ 		 [u"Buf:exec smart..SMT_report_terminal_status 'SHH', '3067135', 15, '2015-12-04 15:51:45', '2', 'DEV_TDL00002', '<LOG-ITF-HAL>\u05b4\ufffd\ufffd\u0221\ufffd\u0373\ufffd\ufffd\ufffd\u01b1\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd:\ufffd\ufffd\u01b1\ufffd\ufffd\u02b1\u03b4\u0221,LogicCode:[00002]"], 
+ 		 [u"Buf:exec smart..SMT_report_terminal_status 'SHH', '3067135', 15, '2015-12-04 15:51:45', '2', 'FSM_FIN01512', '\u01b1\ufffd\ufffd\ufffd\ufffd\u0368\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u01b1'"], 
+ 		 [u"Buf:exec smart..SMT_report_terminal_status 'SHH', '3067135', 15, '2015-12-04 15:51:47', '2', 'MBP_SYS00055', '\ufffd\u0433\ufffd\u01b1\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd:A000767 '"]
